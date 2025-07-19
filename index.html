@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkySage AI Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="clouds-bg"></div>
+
+  <div class="sidebar">
+    <h2>SkySage</h2>
+    <ul>
+      <li>🏠 Home</li>
+      <li>📄 Reports</li>
+      <li>🚨 Alerts</li>
+      <li>🧑‍💻 Support</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Weather AI Dashboard</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="fetchWeather()">Check</button>
+    </div>
+
+    <div class="weather-card">
+      <h2 id="location">--</h2>
+      <p id="temperature">-- °C</p>
+      <p id="condition">--</p>
+    </div>
+
+    <div class="assistant">
+      <p id="aiResponse">Hi, I'm SkySage. Ready to guide your weather needs! 🌤️</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
